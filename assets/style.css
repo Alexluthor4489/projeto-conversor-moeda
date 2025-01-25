@@ -1,9 +1,9 @@
 :root {
-    --background: #FFF;
-    --primary: #333333;
-    --foreground: #e7f4c9;
-    --secondary: #909090;
-    --secondary-light: #c8c8c8;
+    --background: #f4fcf6;
+    --primary: #4d4e53;
+    --foreground: #ace32d;
+    --secondary: #565659;
+    --secondary-light: #6e6e73;
 }
 
 * {
@@ -19,8 +19,10 @@ html {
 body {
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background);
+    background-image: linear-gradient(to right, #4c4b4b , #999a9c, #ede8e8);
     color: var(--primary);
+    overflow-y: hidden;
+    
 }
 
 header {
@@ -30,7 +32,7 @@ header {
 
 header img {
     width: auto;
-    height: 8rem;
+    height: 15rem;
 }
 
 main {
@@ -44,6 +46,10 @@ main section {
     margin: 2rem auto;
     padding: 1rem;
     max-width: 80rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.317);
+    
+    
 }
 
 main section span {
@@ -54,6 +60,7 @@ main section span {
 }
 
 main section input {
+    display: flex;
     flex: 1;
     min-width: 0;
     background: transparent;
@@ -63,10 +70,12 @@ main section input {
     border: 0;
     outline: none;
     text-align: right;
+    
 }
 
 footer {
     text-align: center;
     font-size: 1.4rem;
     color: var(--secondary);
+    font-size: 2em;
 }
